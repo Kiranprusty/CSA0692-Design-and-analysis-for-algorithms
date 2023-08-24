@@ -1,0 +1,24 @@
+#include<stdio.h>
+int fact(int x)
+{
+	int i,fact=1;
+	for(i=1;i<=x;i++)
+	{
+		fact=fact*i;
+	}
+	return fact;
+}
+int main()
+{
+	int n,y,z,k,o,p,result;
+	printf("enter the value of n:");
+	scanf("%d",&n);
+	y=fact(n);
+	printf("enter the value of k:");
+	scanf("%d",&k);
+	z=fact(k);
+	o=n-k;
+	p=fact(o);
+	result=y/(p*z);
+	printf("binomial coefficient=%d",result);
+}
